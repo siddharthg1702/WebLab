@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="prog3.css"> -->
+</head>
+<body>
+    Username:<input type="text", required, id="inp1">
+    Password:<input type="password", required, id="inp2">
+    <button type="button", onclick="check()">Submit</button>
+</body>
+<script>
+    function check()
+    {
+        var uname = document.getElementById("inp1");
+        var pass = document.getElementById("inp2");
+        var k = pass.value;
+        if( k === "password")
+        {
+            window.open("https://www.google.com/")
+        }
+    }
+</script>
+</html>

@@ -1,0 +1,19 @@
+<web-app>
+	<servlet>
+		<servlet-name>myservlet</servlet-name>
+		<servlet-class>MyServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>myservlet</servlet-name>
+		<url-pattern>/pg1</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>myservlet1</servlet-name>
+		<servlet-class>MyServlet1</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>myservlet1</servlet-name>
+		<url-pattern>/pg2</url-pattern>
+	</servlet-mapping>
+</web-app>

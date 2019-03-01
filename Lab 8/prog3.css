@@ -1,0 +1,19 @@
+hospital { 
+    color: white; 
+    background-color : lightpink;
+    width: 100%; 
+} 
+name { 
+    color: darkgreen; 
+    font-size : 40px; 
+    background-color : palegoldenrod; 
+    display : block; 
+} 
+sex, room-number, age, social-security-number, primary-insurance-company, secondary-insurance-company { 
+    display : block; 
+    color: black;
+} 
+sex { 
+    font-size : 25px; 
+    font-weight : bold; 
+} 

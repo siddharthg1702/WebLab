@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="Cars.xsl"?>
+<!DOCTYPE note [
+    <!ELEMENT automobile (car+)>
+    <!ELEMENT car    (make,model,year,color,engine,no_of_doors,transmission_type,accessories)>
+    <!ELEMENT engine      (no_of_cylinders,fuel_systems)>
+    <!ATTLIST accessories radio CDATA  #REQUIRED >
+    <!ATTLIST accessories air_condition CDATA  #REQUIRED >
+    <!ATTLIST accessories power_window CDATA  #REQUIRED >
+    <!ATTLIST accessories power_steering CDATA  #REQUIRED >
+    <!ATTLIST accessories power_brake CDATA  #REQUIRED >
+]>
+<catalog>
+    <car>
+        <make>Maruti</make>
+        <model>800</model>
+        <year>1999</year>
+        <color>Black</color>
+        <engine>
+            <number_of_cylinders>1</number_of_cylinders>
+            <fuel_system>fuel injected</fuel_system>
+        </engine>
+        <number_of_doors>4</number_of_doors>
+        <transmission_type>BB</transmission_type>
+        <accessories radio="Yes" air_conditioning="Yes" power_window="No" power_steering="Yes" power_brake="Yes"></accessories>
+    </car>
+
+    <car>
+        <make>Toyota</make>
+        <model>Camry</model>
+        <year>2018</year>
+        <color>Matte Black</color>
+        <engine>
+            <number_of_cylinders>1</number_of_cylinders>
+            <fuel_system>fuel injected</fuel_system>
+        </engine>
+        <number_of_doors>4</number_of_doors>
+        <transmission_type>BB</transmission_type>
+        <accessories radio="Yes" air_conditioning="Yes" power_window="No" power_steering="Yes" power_brake="Yes"></accessories>
+    </car>
+
+    <car>
+        <make>Toyota</make>
+        <model>Corolla</model>
+        <year>2016</year>
+        <color>Silver</color>
+        <engine>
+            <number_of_cylinders>1</number_of_cylinders>
+            <fuel_system>fuel injected</fuel_system>
+        </engine>
+        <number_of_doors>4</number_of_doors>
+        <transmission_type>BB</transmission_type>
+        <accessories radio="Yes" air_conditioning="Yes" power_window="No" power_steering="Yes" power_brake="Yes"></accessories>
+    </car>
+
+    <car>
+        <make>Toyota</make>
+        <model>Innova</model>
+        <year>2015</year>
+        <color>Green</color>
+        <engine>
+            <number_of_cylinders>1</number_of_cylinders>
+            <fuel_system>fuel injected</fuel_system>
+        </engine>
+        <number_of_doors>4</number_of_doors>
+        <transmission_type>BB</transmission_type>
+        <accessories radio="Yes" air_conditioning="Yes" power_window="No" power_steering="Yes" power_brake="Yes"></accessories>
+    </car>
+
+</catalog>

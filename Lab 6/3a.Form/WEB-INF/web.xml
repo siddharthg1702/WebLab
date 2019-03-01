@@ -1,0 +1,11 @@
+<web-app>
+    <servlet>
+    <servlet-name>SimpleForm</servlet-name>
+    <servlet-class>SimpleForm</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+    <servlet-name>SimpleForm</servlet-name>
+    <url-pattern>/SimpleForm</url-pattern>
+    </servlet-mapping>
+</web-app>

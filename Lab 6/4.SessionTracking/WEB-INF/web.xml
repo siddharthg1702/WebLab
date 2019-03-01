@@ -1,0 +1,11 @@
+<web-app>
+    <servlet>
+    <servlet-name>SessionTrack</servlet-name>
+    <servlet-class>SessionTrack</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+    <servlet-name>SessionTrack</servlet-name>
+    <url-pattern>/SessionTrack</url-pattern>
+    </servlet-mapping>
+</web-app>

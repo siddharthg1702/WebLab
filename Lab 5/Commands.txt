@@ -1,0 +1,10 @@
+CREATE TABLE student (Name VARCHAR(20), RegNo VARCHAR(20) PRIMARY KEY, Password VARCHAR(20), Course1 VARCHAR(20), Mark1 int, Grade1 VARCHAR(5), Course2 VARCHAR(20), Mark2 int, Grade2 VARCHAR(5));
+
+INSERT INTO student VALUES("Kasi", "2016503521", "I am BATMAN", "Big Data", 99, "O", "NLP", 100, "O");
+INSERT INTO student VALUES("Akaash M", "2016503003", "Nasriya", "Big Data", 100, "O", "NLP", 95, "O");
+INSERT INTO student VALUES("Sid", "2016503058", "0611", "Big Data", 70, "O", "NLP", 65, "O");
+INSERT INTO student VALUES("Safiyyah", "2016503545", "saf", "Big Data", 99, "O", "NLP", 100, "O");
+INSERT INTO student VALUES("Gaayathri", "2016503515", "gaayu", "Big Data", 99, "O", "NLP", 100, "O");
+
+
+sudo apt-get install mysql

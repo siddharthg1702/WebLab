@@ -1,0 +1,14 @@
+.body {
+    align-self: auto;
+    background: palegoldenrod;
+}
+
+.green-back{
+    align-content: center;
+    background: green;
+}
+.header{
+    align-self: center;
+    align-items: center;
+    color: white;
+}

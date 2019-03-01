@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js" charset="utf-8"></script>
+</head>
+
+<body onload="fetchMake()">
+    <header>
+        <h1></h1>
+    </header>
+    <form name="myForm" onchange="fetchModel()">
+        <select id="make">
+            <option />
+        </select>
+
+        <br />
+
+        <select id="model">
+            <option />
+        </select>
+
+        <br />
+
+        <select id="color" style="display:none">
+            <option />
+        </select>
+
+    </form>
+    </div>
+    <script type="text/javascript">
+
+        var XML_PATH = "Cars.xml";
+
+        $(function fetchMake() {
+            $.ajax({
+                type: "GET",
+                url: XML_PATH,
+                dataType: "xml",
+                success: function (xml) {
+                    $(xml).find('make').each(function (i) {
+                        var ou = $(this).text();
+                        $('#make').append("<option>" + ou + "</option>");
+                    });
+                }
+            });
+        });
+    </script>
+
+    <script>
+        function fetchModel() {
+            var xml_load1 = new XMLHttpRequest();
+            xml_load1.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    getMakeElement(this);
+                }
+            };
+            xml_load1.open("GET", "Cars.xml", true);
+            xml_load1.send();
+            // var e = document.getElementById("make");
+            // var strUser = e.options[e.selectedIndex].value;
+
+            // var XML_PATH = "Cars.xml";
+
+            // var x = document.getElementById("model");
+            // var option = document.createElement("option");
+            // option.text = "Kiwi";
+            // x.add(option);
+
+            // alert(strUser);
+
+            // $.ajax({
+            //     type: "GET",
+            //     url: XML_PATH,
+            //     dataType: "xml",
+            //     success: function (xml) {
+            //         $(xml).find('model').each(function (i) {
+            //             var ou = $(this).text();
+            //             $('#model').append("<option>" + ou + "</option>");
+            //         });
+            //     }
+            // });
+        }
+
+        function getMakeElement(xml) {
+            var xmlDoc = xml.responseXML;
+            var content = "";
+            var x = xmlDoc.getElementsByTagName("model");
+            for (i = 0; i < x.length; i++) {
+                var x = document.getElementById("model");
+                var option = document.createElement("option");
+                option.text = i.toString();
+                x.add(option);
+
+            }
+            document.getElementById("list").innerHTML = content;
+        }
+
+    </script>
+</body>
+
+</html>

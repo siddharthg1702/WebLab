@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>LOL</title>
+    </head>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            
+        }
+    </style>
+    <body>
+        <script>
+            var mytable = "<table cellpadding=\"0\" cellspacing=\"0\"><tbody><tr>";
+
+            for (var i=0; i<20; i++)
+            {
+                mytable += "</tr><tr>";
+                for(var j=0; j<3; j++)
+                    mytable += "<td>(" + i + ", " + j + ")</td>";
+            }
+
+            mytable += "</tr></tbody></table>";
+
+            document.write(mytable);
+        </script>
+    </body>
+</html>
